@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutricionalappfx.controlador.FXMLAutenticacionController">
+   <children>
+      <TextField fx:id="tfNoPersonal" layoutX="259.0" layoutY="150.0" prefHeight="37.0" prefWidth="229.0" promptText="Ingrese su noPersonal..." />
+      <PasswordField fx:id="pfContrasenia" layoutX="259.0" layoutY="252.0" prefHeight="37.0" prefWidth="229.0" promptText="Ingrese su contraseña..." />
+      <Label layoutX="259.0" layoutY="112.0" text="Numero de Personal" />
+      <Label layoutX="259.0" layoutY="218.0" text="Contraseña" />
+      <Button layoutX="310.0" layoutY="340.0" mnemonicParsing="false" onAction="#btnIniciarSesion" text="Iniciar Sesión" />
+      <Label fx:id="lblErrorNoPersonal" layoutX="259.0" layoutY="190.0" text="Error en el numero de personal" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblErrorContrasenia" layoutX="259.0" layoutY="297.0" text="Error en la contraseña" textFill="RED">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="220.0" fitWidth="229.0" layoutX="25.0" layoutY="108.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../recurso/Nutria.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="130.0" layoutY="8.0" prefHeight="50.0" prefWidth="364.0" text="SERVICIO DE NUTRICIÓN" textAlignment="CENTER">
+         <font>
+            <Font name="Bernard MT Condensed" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="189.0" layoutY="58.0" text="Inice sesión con sus credenciales" />
+   </children>
+</AnchorPane>
