@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <top>
+      <HBox prefHeight="55.0" prefWidth="600.0" spacing="80.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="42.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS">
+               <image>
+                  <Image url="@../recurso/flecha%20atras.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label alignment="CENTER" text="Formulario de Paciente" HBox.hgrow="ALWAYS">
+               <font>
+                  <Font name="Arial Bold Italic" size="27.0" />
+               </font>
+            </Label>
+         </children>
+         <BorderPane.margin>
+            <Insets top="5.0" />
+         </BorderPane.margin>
+      </HBox>
+   </top>
+   <center>
+      <GridPane hgap="10.0" vgap="8.0" BorderPane.alignment="TOP_CENTER">
+         <columnConstraints>
+            <ColumnConstraints hgrow="NEVER" minWidth="10.0" prefWidth="160.0" />
+            <ColumnConstraints hgrow="ALWAYS" minWidth="10.0" prefWidth="390.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="31.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Nombre:" />
+            <TextField fx:id="tfNombre" promptText="Nombre..." GridPane.columnIndex="1" />
+            <Label text="Apellido Paterno:" GridPane.rowIndex="1" />
+            <TextField fx:id="tfApellidoPaterno" promptText="Apellido Paterno..." GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Apellido Materno:" GridPane.rowIndex="2" />
+            <TextField fx:id="tfApellidoMaterno" promptText="Apellido Materno..." GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label text="Fecha de Nacimiento:" GridPane.rowIndex="3" />
+            <DatePicker fx:id="dpFechaNacimiento" maxWidth="1.7976931348623157E308" promptText="Fecha de Nacimiento..." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label text="Teléfono de Contacto:" GridPane.rowIndex="4" />
+            <TextField fx:id="tfTelefonoContacto" promptText="Teléfono de Contacto..." GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Sexo:" GridPane.rowIndex="5" />
+            <HBox alignment="CENTER_LEFT" spacing="20.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <children>
+                  <RadioButton fx:id="rbMasculino" mnemonicParsing="false" text="Masculino">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgSexo" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbFemenino" mnemonicParsing="false" text="Femenino" toggleGroup="$tgSexo" />
+               </children>
+            </HBox>
+            <Label text="Altura:" GridPane.rowIndex="6" />
+            <TextField fx:id="tfAltura" promptText="Altura..." GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <Label text="Peso Inicial:" GridPane.rowIndex="7" />
+            <TextField fx:id="tfPesoInicial" promptText="Peso Inicial..." GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <Label text="Correo Electrónico:" GridPane.rowIndex="8" />
+            <TextField fx:id="tfCorreoElectronico" promptText="Correo Electrónico..." GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+         <BorderPane.margin>
+            <Insets left="20.0" right="20.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+   <bottom>
+      <HBox alignment="CENTER_RIGHT" prefHeight="50.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="Guardar" />
+            <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="85.0" text="Cancelar" />
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" right="20.0" />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+</BorderPane>
