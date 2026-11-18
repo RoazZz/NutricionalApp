@@ -7,8 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="650.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="nutricionalappfx.controlador.FXMLPrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="450.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nutricionalappfx.controlador.FXMLPrincipalController">
    <children>
       <Label fx:id="lbNombre" layoutX="59.0" layoutY="57.0" text="Label">
          <font>
@@ -20,5 +19,7 @@
             <Font size="13.0" />
          </font>
       </Label>
+      <Button fx:id="btnAdminPaciente" layoutX="58.0" layoutY="164.0" mnemonicParsing="false" onAction="#handleBtnAdminPaciente" text="Administrar Pacientes" />
+      <Button fx:id="btnFormularioPaciente" layoutX="58.0" layoutY="225.0" mnemonicParsing="false" onAction="#handleBtnFormularioPaciente" prefHeight="31.0" prefWidth="164.0" text="Formulario Pacientes" />
    </children>
 </AnchorPane>
