@@ -1,0 +1,20 @@
+# --- Credenciales (NO subir) ---
+src/nutricionalappfx/modelo/database.properties
+
+# --- NetBeans / Ant ---
+/build/
+/dist/
+/nbproject/private/
+/nbbuild/
+/nbdist/
+.nb-gradle/
+
+# --- Java ---
+*.class
+*.log
+hs_err_pid*
+
+# --- Sistema operativo ---
+.DS_Store
+Thumbs.db
+desktop.ini
